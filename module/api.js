@@ -23,7 +23,8 @@ const fetchAndRenderComments = () => {
 
   
 const postCommit = () => {
-
+  const elementName = document.getElementById('nameInput');
+  const elementComment = document.getElementById('commentInput');
   const protectionHtml = (string) => {
     return string
       .replaceAll("&", "&amp;")
@@ -33,6 +34,8 @@ const postCommit = () => {
   };
 
   
+  const addFormElement = document.querySelector('.add-form');
+  const loadingListElement = document.querySelector('.loading-text');
 
   return fetch(
     'https://webdev-hw-api.vercel.app/api/v2/ruslankrivilin/comments',

@@ -18,7 +18,7 @@ export function renderLogin (appElement,fetchAndRenderComments){
     <p>Пожалуйста подождите, комментарии загружаются...</p>
     </ul>
     <p>чтобы добавить комментарий, 
-    <a class="text-atoriz" href="#" id="toggleLink">автаризуйтесь</a></p>`;
+    <a class="text-atoriz" href="#" id="toggleLink">авторизуйтесь</a></p>`;
 
 
     appElement.innerHTML = appHtml;
