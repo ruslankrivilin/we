@@ -10,7 +10,8 @@ const convertServer = (response, commentArr) => {
     return response.json().then((responseData) => {
         commentArr = responseData.comments;
         commentArr = commentArr.map((comment) => {
-          const createDate = format(new Date(comment.date), 'dd/MM/yyyy hh:mm');
+          const createDate = format(new Date(comment.date), 'yyyy-MM-dd hh.mm.ss'
+         );
         return {
           name: comment.author.name,
           date: createDate,
